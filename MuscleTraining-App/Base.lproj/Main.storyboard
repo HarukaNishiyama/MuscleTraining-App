@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="KsoKagerou.otf">
+            <string>KsoKagerou</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MuscleTraining_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZQd-8p-5Yh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="357"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="トレーニングした回数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5af-K7-Wdi">
+                                <rect key="frame" x="0.0" y="387" width="414" height="25"/>
+                                <fontDescription key="fontDescription" name="KsoKagerou" family="KsoKagerou" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDO-hR-pCF">
+                                <rect key="frame" x="130" y="506" width="154" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="闘魂注入">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="MuscleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIO-0h-IOa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-R9-QTg">
+                                <rect key="frame" x="120" y="442" width="174" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5af-K7-Wdi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Ys-hf-l4n"/>
+                            <constraint firstItem="Fad-R9-QTg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="40I-LM-4Uf"/>
+                            <constraint firstItem="ZQd-8p-5Yh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KeD-my-ESu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KDO-hR-pCF" secondAttribute="bottom" constant="200" id="OCr-iD-qmt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fad-R9-QTg" secondAttribute="trailing" constant="120" id="Sim-Xf-2iZ"/>
+                            <constraint firstItem="KDO-hR-pCF" firstAttribute="top" secondItem="Fad-R9-QTg" secondAttribute="bottom" constant="30" id="UX8-8u-oai"/>
+                            <constraint firstItem="KDO-hR-pCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="Uau-Mg-fZp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5af-K7-Wdi" secondAttribute="trailing" id="XGd-bd-Sxg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZQd-8p-5Yh" secondAttribute="trailing" id="elo-PE-qeW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KDO-hR-pCF" secondAttribute="trailing" constant="130" id="gM5-KX-apI"/>
+                            <constraint firstItem="ZQd-8p-5Yh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pmQ-fz-Cgg"/>
+                            <constraint firstItem="5af-K7-Wdi" firstAttribute="top" secondItem="ZQd-8p-5Yh" secondAttribute="bottom" constant="30" id="sua-vo-5Wc"/>
+                            <constraint firstItem="Fad-R9-QTg" firstAttribute="top" secondItem="5af-K7-Wdi" secondAttribute="bottom" constant="30" id="w2C-Ox-Ygs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MuscleInput" destination="Fad-R9-QTg" id="boZ-Hk-Joi"/>
+                        <outlet property="MuscleView" destination="ZQd-8p-5Yh" id="jRh-Dp-rzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="94.565217391304358"/>
+        </scene>
+    </scenes>
+</document>
