@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マッスルっち" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nY7-OL-sKb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マッスルっち" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0d-Av-9DT">
                                 <rect key="frame" x="0.0" y="421.5" width="414" height="53"/>
                                 <fontDescription key="fontDescription" name="KsoKagerou" family="KsoKagerou" pointSize="53"/>
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -29,9 +29,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="nY7-OL-sKb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="B95-Ys-IAm"/>
-                            <constraint firstItem="nY7-OL-sKb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vdS-QA-uts"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nY7-OL-sKb" secondAttribute="trailing" id="wbC-0Y-fgB"/>
+                            <constraint firstItem="V0d-Av-9DT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2RC-KQ-AnH"/>
+                            <constraint firstItem="V0d-Av-9DT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MCs-KU-qt0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V0d-Av-9DT" secondAttribute="trailing" id="Ydm-hN-CAc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
