@@ -31,11 +31,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewWillAppear(true)
         // 筋トレの回数で表示する画像を変える
         switch MuscleCount {
-        case 0...10:
+        case 0...9:
             MuscleView.image = UIImage(named: "ookawayakitai_TP_V4.jpg")
-        case 11...20:
+        case 10...19:
             MuscleView.image = UIImage(named: "PAKU6479_TP_V4.jpg")
-        case 21...30:
+        case 20...29:
             MuscleView.image = UIImage(named: "BO15103010151030105164_TP_V4.jpg")
         default:
             // 筋トレ回数をゼロにする
